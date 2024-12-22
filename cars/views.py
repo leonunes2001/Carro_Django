@@ -25,6 +25,8 @@ def new_car_view(request):
         if new_car_form.is_valid():
             new_car_form.save()
             return redirect('cars_list')
-    else:
+    else: 
         new_car_form = CarForm()
-    return render(request, 'new_car.html', {'new_car_form' :new_car_form})
+    return render(request, 'new_car.html', {'new_car_form' : new_car_form})
+
+
